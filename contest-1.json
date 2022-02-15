@@ -1,0 +1,9 @@
+{
+    "hints": [
+        {"url": "https://saregama.s3.ap-south-1.amazonaws.com/clip-1-Hint1.mp3", "text": ""},
+        {"url": "https://saregama.s3.ap-south-1.amazonaws.com/clip-1-Hint2.mp3", "text": ""},
+        {"url": "", "text": "Jagjit Singh, Kajol"}
+      ],
+    "answer": "enc:8f9697a4a49697289c8d28999d9728a38d9c9091a3",
+    "contributor": "sachet_s@Bangalore"
+}
