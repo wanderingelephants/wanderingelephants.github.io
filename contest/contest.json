@@ -1,10 +1,10 @@
 {
-  "contestNumber": 1,
+    "contestNumber": 2,
     "hints": [
         {"url": "/contest/Hint1.mp3", "text": ""},
-        {"url": "/contest/Hint2.mp3", "text": ""},
-        {"url": "", "text": "Jagjit Singh, Kajol"}
+        {"url": "", "text": "Rashid Khan"},
+        {"url": "", "text": "Shahid Kapoor"}
       ],
-    "answer": "enc:8f9697a4a49697289c8d28999d9728a38d9c9091a3",
+    "answer": "aaoge jab tum saajnaa",
     "contributor": "sachet_s@Bangalore"
 }
