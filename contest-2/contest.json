@@ -1,8 +1,8 @@
 {
   "hints": [
-      {"url": "/clip1.mp3", "text": ""},
-      {"url": "/clip2.mp3", "text": ""},
-      {"url": "/clip3.mp3", "text": ""}
+      {"audio": "/clip1.mp3", "text": ""},
+      {"audio": "/clip2.mp3", "text": ""},
+      {"audio": "/clip3.mp3", "text": ""}
     ],
   "answer": "aigiri nandini",
   "contributor": "SamikshaTheViolinist@YouTube",
