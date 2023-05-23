@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var messageList = document.getElementById("aidea-messages-list");
     var messageInput = document.getElementById("aidea-message-input");
     var sendButton = document.getElementById("aidea-send-button");
-    var apiUrl = "https://stage.delphi.games/api/chatbot/botresponse"; // Replace with your API URL
+    var apiUrl = "https://stageapi.delphi.games/api/chatbot/botresponse"; // Replace with your API URL
 
     // Function to create a new chat message
     function createMessage(text, sender) {
