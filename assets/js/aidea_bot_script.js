@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
       var userMessage = messageInput.value;
       if (userMessage.trim() !== "") {
         createMessage(userMessage, "user");
-
+        document.getElementById("aidea-progress-bar").style.display = 'block';
         // Send user message to the API
         // You can use different methods to make the API request, such as fetch or XMLHttpRequest
         // Here's an example using fetch:
@@ -44,10 +44,11 @@ document.addEventListener("DOMContentLoaded", function () {
             return response.json();
           })
           .then(function (data) {
-            // Display the API response
+            document.getElementById("aidea-progress-bar").style.display = 'none';
             createMessage(data.chatbotResponse, "bot");
           })
           .catch(function (error) {
+            document.getElementById("aidea-progress-bar").style.display = 'none';
             console.error("Error:", error);
           });
 

@@ -13,6 +13,28 @@
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+.aidea-progress-bar {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 200px;
+  right: 40px;
+  display: none;
+  border: 4px solid #ccc;
+  border-top-color: #ff7f00;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /* Button used to open the chat form - fixed at the bottom of the page */
 .open-button {
     background-color: #555;
