@@ -43,6 +43,7 @@
             background-color: #0056b3;
         }
 .athena_bot-msger {
+  z-index: 10000;
   display: none;
   flex-flow: column wrap;
   justify-content: space-between;

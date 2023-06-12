@@ -4,7 +4,7 @@ const PERSON_NAME = "You";
     function appendMessage(name, side, text) {
         //   Simple solution for small apps
         const msgHTML = `
-          <div class="athena_bot-msg ${side}-msg">
+          <div class="athena_bot-msg athena_bot-${side}-msg">
             
       
             <div class="athena_bot-msg-bubble">
