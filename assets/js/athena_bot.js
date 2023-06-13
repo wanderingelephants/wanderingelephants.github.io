@@ -25,7 +25,7 @@ const PERSON_NAME = "You";
       async function botResponse(userQuery) {
           try{
             console.log("window.location.hostname", window.location.hostname);
-                    const endpoint = "https://7204-103-186-41-200.ngrok-free.app"
+                    const endpoint = "https://stageapi.delphi.games"
                     let res = await fetch(`${endpoint}/api/chatbot/botresponse`, {
                     method: "POST",
                     body: JSON.stringify({
