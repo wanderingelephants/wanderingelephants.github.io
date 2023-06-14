@@ -84,7 +84,7 @@ const PERSON_NAME = "You";
               </div>
       
               <div class="athena_bot-msg-text">
-                Hi, Welcome ! Go ahead and ask me.
+                Hi ! Ask me about Neelambari Resort, in a language of your choice.
               </div>
             </div>
           </div>
