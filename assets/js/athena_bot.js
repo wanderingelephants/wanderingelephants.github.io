@@ -5,8 +5,6 @@ const PERSON_NAME = "You";
         //   Simple solution for small apps
         const msgHTML = `
           <div class="athena_bot-msg athena_bot-${side}-msg">
-            
-      
             <div class="athena_bot-msg-bubble">
               <div class="athena_bot-msg-info">
                 <div class="athena_bot-msg-info-name">${name}</div>
@@ -24,6 +22,8 @@ const PERSON_NAME = "You";
       
       async function botResponse(userQuery) {
           try{
+            const spinner = get(".athena_bot-spinner");
+            spinner.style.display = 'block';
             console.log("window.location.hostname", window.location.hostname);
                     const endpoint = "https://stageapi.delphi.games"
                     let res = await fetch(`${endpoint}/api/chatbot/botresponse`, {
@@ -43,9 +43,12 @@ const PERSON_NAME = "You";
                     const resp = await res.json();
                     console.log(resp);
                     appendMessage(BOT_NAME, "left", resp.message);
+                    spinner.style.display = 'none';
                   }
                   catch(e){
-                    console.log(e)
+                    console.log(e);
+                    appendMessage(BOT_NAME, "left", "No response. Please try after some time.");
+                    spinner.style.display = 'none';
                   }
         
       }
@@ -89,6 +92,7 @@ const PERSON_NAME = "You";
       
         <form class="athena_bot-msger-inputarea">
           <input type="text" class="athena_bot-msger-input" placeholder="Enter your message...">
+          <div class="athena_bot-spinner"></div>
           <button type="submit" class="athena_bot-msger-send-btn">Send</button>
         </form>
         
