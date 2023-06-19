@@ -31,7 +31,7 @@ const PERSON_NAME = "You";
                     body: JSON.stringify({
                       "input": {
                         "arg1": {
-                          "domain": "neelambari",
+                          "domain": window.location.hostname,
                           userQuery
                         }
                       }
